@@ -40,6 +40,6 @@ public class OrderController {
 
     @GetMapping("/{id}")
     public ResponseEntity<Order> getOrderById(@PathVariable Long id) {
-        return ResponseEntity.of(orderService.getOrderById(id));
+        return ResponseEntity.ok(orderService.getOrderById(id));
     }
 }
